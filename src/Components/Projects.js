@@ -8,7 +8,7 @@ class Projects extends Component {
 
     if(this.props.projects){
       projectItems = this.props.projects.map(project => {
-       console.log(project);
+
         return (
             <ProjectItem key={project.title} project= { project } />
         );
@@ -18,6 +18,7 @@ class Projects extends Component {
 
     return (
       <div className="Projects">
+        <h3>Latest Project</h3>
        { projectItems }
       </div>
     );
